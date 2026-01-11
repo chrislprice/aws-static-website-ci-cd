@@ -2,4 +2,4 @@ version: 0.2
 phases:
   build:
     commands:
-      - aws s3 sync . s3://cp-static-website-demo --delete
+      - aws s3 sync . s3://cp-static-website-demo --delete --exclude "buildspec.yml"
